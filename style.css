@@ -1,0 +1,75 @@
+body {
+	border: 0;
+	margin: 0;
+	background-color: black;
+}
+
+#display-container {
+	position: fixed;
+	right: 10%;
+	top: 2vh;
+}
+
+#display-container .display {
+	display: inline-block;
+	font-size: 20pt;
+	color: black;
+	padding: 0.2em;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
+	border-radius: 0.1em;
+	background-color: orange;
+}
+
+#display-container .display:hover {
+	background-color: yellow;
+	cursor: pointer;
+}
+
+#display-container table {
+	font-size: 1.4em;
+	color: white;
+	margin: 0.3em;
+}
+
+#display-container table td,
+#display-container table th {
+	border: 1px solid gray;
+	padding: 0.3em;
+}
+
+img,
+#overlay {
+	display: inline-block;
+	font-size: 12px;
+	font-style: sans-serif;
+	height: 100vh;
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+
+#overlay line {
+	opacity: 0.65;
+	stroke: white;
+	stroke-width: 2;
+}
+#overlay line.active {
+	opacity: 0.85;
+	stroke: orange;
+}
+
+#overlay:hover {
+	cursor: default;
+}
+
+#overlay g circle {
+	fill: black;
+}
+#overlay g:hover circle {
+	fill: orange;
+}
+#overlay g:hover text {
+	font-weight: bold;
+}
+
